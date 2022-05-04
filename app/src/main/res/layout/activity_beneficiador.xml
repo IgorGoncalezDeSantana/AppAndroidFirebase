@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.BeneficiadorActivity">
+
+    <Button
+        android:id="@+id/btnCadastrar2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_rounded"
+        android:onClick="Cadastrar"
+        android:text="PROXIMO"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtDescricao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricao" />
+
+    <EditText
+        android:id="@+id/edtSexo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Sexo"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtRaca"
+        app:layout_constraintStart_toStartOf="@+id/edtRaca"
+        app:layout_constraintTop_toBottomOf="@+id/edtRaca" />
+
+    <EditText
+        android:id="@+id/edtRaca"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Raça"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataNascimentoPet"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimentoPet"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimentoPet" />
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Descrição"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtSexo"
+        app:layout_constraintStart_toStartOf="@+id/edtSexo"
+        app:layout_constraintTop_toBottomOf="@+id/edtSexo" />
+
+    <EditText
+        android:id="@+id/edtDataNascimentoPet"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Data de Nascimento"
+        android:inputType="phone"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtNomePet"
+        app:layout_constraintStart_toStartOf="@+id/edtNomePet"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomePet" />
+
+    <EditText
+        android:id="@+id/edtNomePet"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPet" />
+
+    <TextView
+        android:id="@+id/lblPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Pet"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

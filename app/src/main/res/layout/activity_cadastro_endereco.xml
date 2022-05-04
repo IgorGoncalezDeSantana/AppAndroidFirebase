@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CadastroEnderecoActivity">
+
+    <Button
+        android:id="@+id/btnCadastrarEndereco"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_rounded"
+        android:onClick="Cadastrar"
+        android:text="PROXIMO"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <TextView
+        android:id="@+id/lblEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Endereço"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEndereco">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtCEP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="CEP"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtLogradouro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="Logradouro"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtBairro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="Bairro"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtCidade"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="Cidade"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="Estado"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtPais"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="País"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtNumero"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="Número"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/edtComplemento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edittext_rounded"
+                android:ems="10"
+                android:hint="Complemento"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

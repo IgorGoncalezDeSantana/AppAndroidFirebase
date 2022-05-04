@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tccbcc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TCCBCC">
+        <activity
+            android:name=".views.CadastroImagemBeneficiadoActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.BeneficiadoActivity" />
+        </activity>
+        <activity
+            android:name=".views.CadastroImagemBeneficiador"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ListagemTreinamentosActivity" />
+        </activity>
+        <activity
+            android:name=".views.DenunciaActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ProfilesActivity" />
+        </activity>
+        <activity
+            android:name=".views.UsuarioBeneficiadorProfileActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ProfilesActivity" />
+        </activity>
+        <activity
+            android:name=".views.CadastroDependenteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.BeneficiadoActivity" />
+        </activity>
+        <activity
+            android:name=".views.NecessidadeEspecialActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.BeneficiadoActivity" />
+        </activity>
+        <activity
+            android:name=".views.CadastroTreinamentoActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ListagemTreinamentosActivity" />
+        </activity>
+        <activity
+            android:name=".views.ListagemTreinamentosActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ListagemVacinacaoActivity" />
+        </activity>
+        <activity
+            android:name=".views.CadastroVacinaActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.ListagemVacinacaoActivity" />
+        </activity>
+        <activity
+            android:name=".views.ListagemVacinacaoActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.BeneficiadorActivity" />
+        </activity>
+        <activity
+            android:name=".views.BeneficiadoActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.EscolhaActivity" />
+        </activity>
+        <activity
+            android:name=".views.BeneficiadorActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.EscolhaActivity" />
+        </activity>
+        <activity
+            android:name=".views.EscolhaActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.CadastroEnderecoActivity" />
+        </activity>
+        <activity
+            android:name=".views.CadastroEnderecoActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.CadastroActivity" />
+        </activity>
+        <activity
+            android:name=".views.ProfilesActivity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MensagensActivity" />
+        </activity>
+        <activity
+            android:name=".views.ChatActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MensagensActivity" />
+        </activity>
+        <activity
+            android:name=".views.ContatosActivity"
+            android:exported="true"
+            android:label="@string/contacts">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MensagensActivity" />
+        </activity>
+        <activity
+            android:name=".views.MensagensActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".views.CadastroActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

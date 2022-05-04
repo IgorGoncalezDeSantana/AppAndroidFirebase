@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CadastroDependenteActivity">
+
+    <EditText
+        android:id="@+id/edtDescricaoNecessidadeEspecialDependente"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Descreva a necessidade especial do dependente"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataNascimentoDependente"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimentoDependente"
+        app:layout_constraintTop_toBottomOf="@+id/edtGeneroDependente" />
+
+    <Button
+        android:id="@+id/btnCadastrar8"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_rounded"
+        android:onClick="Cadastrar"
+        android:text="PROXIMO"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtDescricaoNecessidadeEspecialDependente"
+        app:layout_constraintStart_toStartOf="@+id/edtDescricaoNecessidadeEspecialDependente"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricaoNecessidadeEspecialDependente" />
+
+    <EditText
+        android:id="@+id/edtDataNascimentoDependente"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Data de Nascimento"
+        android:inputType="phone"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtGeneroDependente"
+        app:layout_constraintStart_toStartOf="@+id/edtGeneroDependente"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeDependente" />
+
+    <EditText
+        android:id="@+id/edtGeneroDependente"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Gênero"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtNomeDependente"
+        app:layout_constraintStart_toStartOf="@+id/edtNomeDependente"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimentoDependente" />
+
+    <EditText
+        android:id="@+id/edtNomeDependente"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDependente" />
+
+    <TextView
+        android:id="@+id/lblDependente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Dependente"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CadastroVacinaActivity">
+
+    <Button
+        android:id="@+id/btnCadastrar3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_button_rounded"
+        android:onClick="Cadastrar"
+        android:text="SALVAR"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataVacina"
+        app:layout_constraintStart_toStartOf="@+id/edtDataVacina"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataVacina" />
+
+    <EditText
+        android:id="@+id/edtDataVacina"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Data"
+        android:inputType="phone"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDescricaoVacina"
+        app:layout_constraintStart_toStartOf="@+id/edtDescricaoVacina"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricaoVacina" />
+
+    <EditText
+        android:id="@+id/edtDescricaoVacina"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtNomeVacina"
+        app:layout_constraintStart_toStartOf="@+id/edtNomeVacina"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeVacina" />
+
+    <EditText
+        android:id="@+id/edtNomeVacina"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblVacina" />
+
+    <TextView
+        android:id="@+id/lblVacina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Vacina"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pet Therapy</string>
+    <string name="contacts">Contatos</string>
+    <string name="logout">logout</string>
+    <string name="btn_chat">Enviar</string>
+    <string name="message">Digite a mensagem</string>
+    <string name="we_will_send_you_an">We will send you an</string>
+    <string name="get_solution">Ask your any question for Expert and get Solution for your Problem</string>
+    <string name="Buscar">Buscar</string>
+</resources>
